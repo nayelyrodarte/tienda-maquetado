@@ -1,26 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
+import searchIcon from '../img/search-24px.png';
 
-import { makeStyles } from '@material-ui/styles';
+const TextInput = styled.div`
+  border-style: hidden;
 
-const inputStyles = makeStyles({
-  root: {
-    border: 'none',
-    borderBottom: 'solid 1px black',
-    display: 'inline',
-  },
-});
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
 
 function SearchBar() {
-  const styles = inputStyles();
   return (
-    <div>
-      <input
-        className={styles.root}
-        type='text'
-        placeholder='Buscar producto...'
-      />
-      <img src='search-icon.svg' alt='search' />
-    </div>
+    <TextInput>
+      <input type='text' placeholder='Buscar producto...' />
+      <img src={searchIcon} alt='search' />
+    </TextInput>
   );
 }
 
