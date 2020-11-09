@@ -1,36 +1,33 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/styles';
+import styled from 'styled-components';
 
-const shortcutStyles = makeStyles({
-  root: {
-    width: '2em',
-    margin: '0 1em',
-  },
-  biggerImg: {
-    width: '3em',
-  },
-  biggestImg: {
-    width: '5em',
-  },
-});
+import miCuentaIcon from '../img/account-1.png';
+import favoritosIcon from '../img/favorites.png';
+import pedidoMasivoIcon from '../img/order-1.png';
+import miCarritoIcon from '../img/shopping-cart-1.png';
+
+const ShortcutsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 40%;
+
+  img {
+    width: 3em;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
 
 function Shortcuts() {
-  const styles = shortcutStyles();
   return (
-    <div>
-      <img className={styles.root} src='Group383@2x.png' alt='mi cuenta' />
-      <img
-        className={styles.biggerImg}
-        src='Group381@2x.png'
-        alt='mis favoritos'
-      />
-      <img
-        className={styles.biggestImg}
-        src='Group377@2x.png'
-        alt='cargar pedido masivo'
-      />
-      <img className={styles.root} src='Group375@2x.png' alt='mi carrito' />
-    </div>
+    <ShortcutsWrapper>
+      <img src={miCuentaIcon} alt='mi cuenta' />
+      <img src={favoritosIcon} alt='mis favoritos' />
+      <img src={pedidoMasivoIcon} alt='cargar pedido masivo' />
+      <img src={miCarritoIcon} alt='mi carrito' />
+    </ShortcutsWrapper>
   );
 }
 
