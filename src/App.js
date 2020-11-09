@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import MenuBar from './components/MenuBar';
+import Carousel from './components/Carousel';
+import FeaturedProducts from './components/FeaturedProducts';
+import MidBanner from './components/MidBanner';
+import BrandsBanner from './components/BrandsBanner';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <MenuBar />
+      <Carousel />
+      <FeaturedProducts title={'Nuevos productos'} />
+      <MidBanner />
+      <FeaturedProducts title={'Más vendidos'} />
+      <BrandsBanner />
+      <Footer />
     </div>
   );
 }
