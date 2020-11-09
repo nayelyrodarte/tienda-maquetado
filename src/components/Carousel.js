@@ -5,29 +5,34 @@ import slideTwo from '../img/slideTwo.png';
 
 const CarouselWrapper = styled.div`
   display: 'grid';
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(40%, 1fr);
   height: 60vh;
+  overflow: hidden;
+
+  img {
+    margin-left: -10px;
+  }
 
   img:nth-of-type(1) {
     position: relative;
-    width: 100%;
     height: inherit;
-    top: 0;
-    left: 0;
   }
+
   img:nth-of-type(2) {
-    display: block;
-    max-width: 60%;
-    height: inherit;
+    overflow: hidden;
     position: absolute;
-    right: 1px;
-    top: 34%;
-    @media (min-width: 425px) {
-      _display: none;
-    }
+    width: 65%;
+    height: inherit;
   }
 
-
+  @media (max-width: 768px) {
+    img:nth-of-type(1) {
+      z-index: 3;
+      width: 105%;
+    }
+    img:nth-of-type(2) {
+      display: none;
+    }
   }
 `;
 
