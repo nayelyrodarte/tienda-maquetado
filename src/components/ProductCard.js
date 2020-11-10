@@ -54,7 +54,7 @@ function ProductCard() {
   return (
     <CardWrapper>
       <img src={productPlaceholder} alt='product' />
-      <h3>Item name</h3>
+      <h3>Product name</h3>
       <div>
         <span>$000.00</span>
         <img style={{ width: '0.8em' }} src={cardCartIcon} alt='cart icon' />
