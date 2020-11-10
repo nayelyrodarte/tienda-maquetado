@@ -6,9 +6,6 @@ import MidBanner from './components/MidBanner';
 import BrandsBanner from './components/BrandsBanner';
 import Footer from './components/Footer';
 
-import '../src/App.css';
-import featuredProducts from './components/FeaturedProducts';
-
 function App() {
   return (
     <div>
@@ -16,6 +13,7 @@ function App() {
       <MenuBar />
       <Carousel />
       <FeaturedProducts title={'Nuevos productos'} />
+      <MidBanner />
       <FeaturedProducts title={'Más vendidos'} />
       <Footer />
     </div>
