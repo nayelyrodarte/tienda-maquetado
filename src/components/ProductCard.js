@@ -8,11 +8,10 @@ const CardWrapper = styled.div`
   display: grid;
   grid-template-rows: repeat(60%, 20%, 20%);
   border-radius: 20px;
-  border: 1px solid white;
-  width: 20%;
+  border: 1px solid lightgray;
+  width: inherit;
   height: fit-content;
   padding: 0.5em;
-  box-shadow: -2px 4px 15px -4px gray;
   position: relative;
 
   h3 {
@@ -24,6 +23,8 @@ const CardWrapper = styled.div`
   span {
     font-size: 0.8em;
     color: #004d9c;
+    text-align: center;
+    margin: auto;
   }
 
   span {
