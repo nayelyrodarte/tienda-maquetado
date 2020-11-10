@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import mastercardLogo from '../img/mastercard_logo.png';
 
 const FooterWrapper = styled.div`
   color: white;
-  line-height: 1em;
+  line-height: 1.2em;
 
   .main__grid {
     padding: 5em;
@@ -66,6 +67,7 @@ function Footer() {
           <p>
             Aceptamos tarjetas de crédito, débito, prepago y pagos en efectivo
           </p>
+          <img src={mastercardLogo} alt='mastercard logo' />
         </div>
       </div>
       <div className='sub__footer'>
