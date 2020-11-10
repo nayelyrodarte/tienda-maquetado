@@ -39,7 +39,7 @@ const CarouselWrapper = styled.div`
     position: absolute;
     color: white;
     z-index: 40;
-    margin: 3em 5em;
+    margin: 3em 10%;
     width: 10em;
     height: 3em;
     text-align: center;
@@ -50,7 +50,7 @@ const CarouselWrapper = styled.div`
   @media (max-width: 768px) {
     img:nth-of-type(1) {
       z-index: 3;
-      width: 105%;
+      width: 102%;
     }
     img:nth-of-type(2) {
       display: none;
