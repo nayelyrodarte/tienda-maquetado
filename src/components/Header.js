@@ -12,11 +12,11 @@ import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 36%);
+  grid-template-columns: repeat(3, 30%);
   background-color: white;
-  z-index: 20;
+  z-index: 40;
+  width: 100%;
   margin: auto;
-  width: 100vw;
   box-shadow: -2px 4px 15px -4px #000000;
 
   .menu__icons {
