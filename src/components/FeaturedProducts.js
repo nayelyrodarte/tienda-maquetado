@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProductCard from './ProductCard';
+import arrowIcon from '../img/arrow_forward.png';
 
 const ProductsWrapper = styled.div`
   .main__grid {
@@ -8,7 +9,7 @@ const ProductsWrapper = styled.div`
     margin: auto;
     width: fit-content;
     display: grid;
-    grid-template-columns: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 25vw);
     grid-template-rows: repeat(2, 40vh);
     grid-gap: 1em;
   }
@@ -43,12 +44,6 @@ const ProductsWrapper = styled.div`
 `;
 
 function featuredProducts({ title }) {
-  // const fakeData = (items) => {
-  //   for (let i = 1; i < items; i++) {
-  //     return <ProductCard />;
-  //   }
-  // };
-
   return (
     <ProductsWrapper>
       <h2>{title}</h2>
@@ -60,7 +55,9 @@ function featuredProducts({ title }) {
         <ProductCard />
         <ProductCard />
       </div>
-      <p>Ver más</p>
+      <p>
+        Ver más <img style={{ width: '1.5em' }} src={arrowIcon} alt='arrow' />
+      </p>
     </ProductsWrapper>
   );
 }
