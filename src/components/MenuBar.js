@@ -6,13 +6,14 @@ import arrowDownIcon from '../img/arrow_down.png';
 const MenuWrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 20%) 1fr;
+  grid-template-columns: repeat(2, 30%) 1fr;
   align-items: center;
   background-color: #5349db;
   height: 8vh;
 
   div p,
-  span {
+  span,
+  img {
     color: white;
     display: inline;
     margin: 0em 1em;
