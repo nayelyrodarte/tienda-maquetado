@@ -7,7 +7,7 @@ import returnIcon from '../img/return-icon.png';
 const BannerWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #e7a59d;
+  background-color: #e2cac7;
   align-items: center;
   justify-items: center;
   text-align: center;
