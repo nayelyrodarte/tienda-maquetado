@@ -8,7 +8,8 @@ const CardWrapper = styled.div`
   display: grid;
   grid-template-rows: repeat(60%, 20%, 20%);
   border-radius: 20px;
-  border: 1px solid lightgray;
+  border: 1px solid white;
+  box-shadow: 0px 0px 19px -15px rgba(0, 0, 0, 0.95);
   width: inherit;
   height: fit-content;
   padding: 0.5em;
@@ -56,6 +57,7 @@ function ProductCard() {
       <h3>Item name</h3>
       <div>
         <span>$000.00</span>
+        <img style={{ width: '0.8em' }} src={cardCartIcon} alt='cart icon' />
         <span>Agregar al carrito</span>
       </div>
       <img
