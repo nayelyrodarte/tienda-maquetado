@@ -12,11 +12,11 @@ import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(3, 1fr);
   background-color: white;
-  z-index: 40;
   width: 100%;
-  margin: auto;
+  z-index: 40;
+  padding: 1em 2em;
   box-shadow: -2px 4px 15px -4px #000000;
 
   .menu__icons {
@@ -27,6 +27,7 @@ const HeaderWrapper = styled.div`
   }
 
   .search__input {
+    margin: 1em;
     position: relative;
     margin-top: 1em;
 
@@ -46,8 +47,7 @@ const HeaderWrapper = styled.div`
   }
 
   .account__icons {
-    width: inherit;
-    align-self: end;
+    margin-left: -5em;
     img {
       width: 3.5em;
       margin: 0.5em;
@@ -56,7 +56,7 @@ const HeaderWrapper = styled.div`
       width: 4em;
     }
     img:nth-of-type(3) {
-      width: 6em;
+      width: 7em;
     }
   }
 
