@@ -6,6 +6,8 @@ import MidBanner from './components/MidBanner';
 import BrandsBanner from './components/BrandsBanner';
 import Footer from './components/Footer';
 
+import '../src/App.css';
+
 function App() {
   return (
     <div>
